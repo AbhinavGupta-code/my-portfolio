@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A simple and fast currency converter web app using live exchange rates.">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="CurrencyConverter.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous"/>
+</head>
+<body>
+  <div class="converter-container">
+    <h1>Currency Converter</h1>
+    <form id="converter-form">
+      <div class="input-group">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" min="1" value="1" required />
+      </div>
+      <div class="currency-select">
+        <div class="select-box">
+          <label for="from-currency">From</label>
+          <div class="selector">
+            <img id="from-flag" src="https://flagsapi.com/US/flat/64.png" alt="From flag"/>
+            <select id="from-currency"></select>
+          </div>
+        </div>
+        <i class="fa-solid fa-arrow-right-arrow-left switch-icon" title="Switch"></i>
+        <div class="select-box">
+          <label for="to-currency">To</label>
+          <div class="selector">
+            <img id="to-flag" src="https://flagsapi.com/IN/flat/64.png" alt="To flag"/>
+            <select id="to-currency"></select>
+          </div>
+        </div>
+      </div>
+      <p class="conversion-msg">Loading exchange rate...</p>
+      <button type="submit">Convert</button>
+    </form>
+  </div>
+
+  <script src="CountryCurrencylist.js"></script>
+  <script src="CurrencyConverter.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* Reset margins and center text */
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Heading styling */
+h1 {
+  background-color: #081b31;
+  color: #fff;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+/* Each game choice (rock, paper, scissors) */
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+/* Hover effect for choices */
+.choice:hover {
+  cursor: pointer;
+  background-color: #081b31;
+  transform: scale(1.05);
+}
+
+/* Image styling inside choices */
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Layout for all three choices */
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+/* Scoreboard layout */
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+/* Message container styles */
+.msg-container {
+  margin-top: 3rem;
+}
+
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Display computer choice */
+#comp-choice-display {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Reset button styling */
+#reset-btn {
+  margin-top: 2rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #081b31;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Highlight effect for winning choice */
+.win {
+  box-shadow: 0 0 20px 5px limegreen;
+}
